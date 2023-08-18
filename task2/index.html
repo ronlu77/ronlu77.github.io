@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <title>喜东茶预定</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="wrapper">
+                <ul class="imgs">
+                    <li>
+                        <img src="./images/mt1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/mt2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/mt3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/mt4.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <form action="#" method="post" id="formData">
+                <div class="col">
+                    <label class="title">口味:</label>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <input type="radio" name="tastes" id="bobo" checked>
+                                <label for="bobo">芋泥波波</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tastes" id="taotao">
+                                <label for="taotao">芝芝桃桃</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tastes" id="duoduo">
+                                <label for="duoduo">多肉葡萄</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="cup">
+                        <span class="title">几杯:</span>
+                    </label>
+                    <div class="content">
+                        <input type="number" name="drinks" id="cup" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="title">杯型:</span>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <input type="radio" value="超大杯" name="size" id="sup" checked>
+                                <label for="sup">超大杯</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="大杯" name="size" id="big">
+                                <label for="big">大杯</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="中杯" name="size" id="mid">
+                                <label for="mid">中杯</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="sweet">
+                        <span class="title">甜度:</span>
+                    </label>
+                    <div class="content">
+                        <select name="sweet" id="sweet" required>
+                            <option value="全糖" selected>全糖</option>
+                            <option value="七分糖">七分糖</option>
+                            <option value="五分糖">五分糖</option>
+                            <option value="三分糖">三分糖</option>
+                            <option value="无糖">无糖</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="title">免费小料:</span>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="small" id="boba">
+                                <label for="boba">波霸</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="small" id="yeguo">
+                                <label for="yeguo">椰果</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="small" id="ximilu">
+                                <label for="ximilu">西米露</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="small" id="chadong">
+                                <label for="chadong">茶冻</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="small" id="" hongdou>
+                                <label for="hongdou">红豆</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="small" id="xiancao">
+                                <label for="xiancao">仙草</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="title">加价小料:</span>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="markup" id="ice">
+                                <label for="ice">冰淇淋(￥4)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="markup" id="buding">
+                                <label for="buding">布丁(￥3)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="markup" id="naishuang">
+                                <label for="naishuang">奶霜(￥2)</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="title">是否加冰:</span>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <input type="radio" id="yesICE" value="是" name="isICE" checked>
+                                <label for="yesICE">是</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="noICE" value="否" name="isICE">
+                                <label for="noICE">否</label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <label>
+                        <span class="title">是否去茶底:</span>
+                    </label>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <input type="radio" value="是" id="yesChadi" name="isDelete" checked>
+                                <label for="yesChadi">是</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="否" id="noChadi" name="isDelete">
+                                <label for="noChadi">否</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="address">
+                        <span class="title">你的地址:</span>
+                    </label>
+                    <div class="content">
+                        <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="tel">
+                        <span class="title">你的手机号:</span>
+                    </label>
+                    <div class="content">
+                        <input type="tel" id="tel" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="time">
+                        <span class="title">期待送达时间:</span>
+                    </label>
+                    <div class="content">
+                        <input type="time" id="time" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="description">
+                        <span class="title">备注:</span>
+                    </label>
+                    <div class="content">
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="title">支付方式:</span>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <input type="radio" id="wechat" name="pay" value="微信" checked>
+                                <label for="wechat">微信</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="alipay" value="支付宝" name="pay">
+                                <label for="alipay">支付宝</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col footer">
+                    <button class="submit-btn btn" type="submit">提交</button>
+                    <button class="reset-btn btn" type="reset">重置</button>
+                </div>
+            </form>
+          
+        </div>
+        <div class="to-top">
+            <a href="#">回到顶部</a>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
