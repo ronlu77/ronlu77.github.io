@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #FFEC3D;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.header {
+    flex: 1;
+}
+
+.main {
+    width: 80%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main h1 {
+    flex: 2;
+    font-size: 80px;
+}
+
+.main p {
+    flex: 1;
+    margin: 10px;
+}
+
+.main .left,.right {
+    display: flex;
+    flex-direction: column; 
+    height: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    flex: 1;
+}
+
+.footer button {
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    background: #1F2428;
+    color: #fff;
+    cursor: pointer;
+}

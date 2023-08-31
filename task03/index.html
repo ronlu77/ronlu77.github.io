@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../reset.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="wrapper">
+            <div class="header"></div>
+            <div class="main">
+                <div class="left">
+                    <h1>?</h1>
+                    <!-- <img src="" alt=""> -->
+                    <div>
+                        <p>机器人</p>
+                        <p>胜：<span>0</span>&nbsp;|&nbsp;负：<span>0</span></p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1>?</h1>
+                    <!-- <img src="" alt=""> -->
+                    <div>
+                        <p>玩家</p>
+                        <p>胜：<span>0</span>&nbsp;|&nbsp;负：<span>0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button>开始下一回合</button>
+            </div>
+        </div>
+    </section>
+    <dialog open>
+        <form action="#" id="select-form">
+            <p class="row">
+                <label for="gesture">请选择要出的手势：</label>
+                <select name="gesture" id="gesture-select">
+                    <option value="1" checked>石头</option>
+                    <option value="2">剪刀</option>
+                    <option value="3">布</option>
+                </select>
+            </p>
+            <p class="row">
+                <button value="defualt">确认</button>
+            </p>
+        </form>
+    </dialog>
+    <script src="./script.js"></script>
+</body>
+
+</html>
