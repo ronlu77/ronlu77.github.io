@@ -15,39 +15,48 @@
             <div class="header"></div>
             <div class="main">
                 <div class="left">
-                    <h1>?</h1>
-                    <!-- <img src="" alt=""> -->
+                    <div class="left-img">
+                        <h1 class="left-gesture-item active">?</h1>
+                        <img class="left-gesture-item" src="" alt="剪刀">
+                        <img class="left-gesture-item" src="" alt="石头">
+                        <img class="left-gesture-item" src="" alt="布">
+                    </div>
                     <div>
                         <p>机器人</p>
-                        <p>胜：<span>0</span>&nbsp;|&nbsp;负：<span>0</span></p>
+                        <p>胜：<span class="robotWin">0</span>&nbsp;|&nbsp;负：<span class="robotLoss">0</span></p>
                     </div>
                 </div>
                 <div class="right">
-                    <h1>?</h1>
-                    <!-- <img src="" alt=""> -->
+                    <div class="right-img">
+                        <h1 class="right-gesture-item active">?</h1>
+                        <img class="right-gesture-item" src="" alt="剪刀">
+                        <img class="right-gesture-item" src="" alt="石头">
+                        <img class="right-gesture-item" src="" alt="布">
+                    </div>
                     <div>
                         <p>玩家</p>
-                        <p>胜：<span>0</span>&nbsp;|&nbsp;负：<span>0</span></p>
+                        <p>胜：<span class="userWin">0</span>&nbsp;|&nbsp;负：<span class="userLoss">0</span></p>
                     </div>
                 </div>
             </div>
+            <div class="result-info"></div>
             <div class="footer">
-                <button>开始下一回合</button>
+                <button id="start-button">开始下一回合</button>
             </div>
         </div>
     </section>
-    <dialog open>
-        <form action="#" id="select-form">
+    <dialog id="dialog-info">
+        <form action="#" id="select-form" method="dialog">
             <p class="row">
-                <label for="gesture">请选择要出的手势：</label>
+                <label for="gesture-select">请选择要出的手势：</label>
                 <select name="gesture" id="gesture-select">
-                    <option value="1" checked>石头</option>
-                    <option value="2">剪刀</option>
+                    <option value="1" checked>剪刀</option>
+                    <option value="2">石头</option>
                     <option value="3">布</option>
                 </select>
             </p>
             <p class="row">
-                <button value="defualt">确认</button>
+                <button id="confirm-button" value="defualt">确认</button>
             </p>
         </form>
     </dialog>

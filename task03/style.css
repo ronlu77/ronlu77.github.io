@@ -37,9 +37,10 @@
     margin: 10px;
 }
 
-.main .left,.right {
+.main .left,
+.right {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     height: 80%;
     text-align: center;
     font-weight: bold;
@@ -60,4 +61,37 @@
     background: #1F2428;
     color: #fff;
     cursor: pointer;
+}
+
+#select-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    color: #1F2428;
+}
+
+#confirm-button {
+    width: 80px;
+    height: 26px;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #1F2428;
+}
+
+#gesture-select {
+    width: 80px;
+    outline: none;
+    border: 2px solid #1F2428;
+}
+
+.gesture-item {
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
 }
