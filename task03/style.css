@@ -50,6 +50,7 @@
 
 .footer {
     flex: 1;
+    margin-top: 20px;
 }
 
 .footer button {
@@ -88,10 +89,35 @@
     border: 2px solid #1F2428;
 }
 
-.gesture-item {
-    visibility: hidden;
+.left-gesture-item,
+.right-gesture-item {
+    display: none;
 }
 
 .active {
-    visibility: visible;
+    display: block;
+}
+
+.header, .result-info {
+    font-weight: bold;
+}
+
+.header{
+    font-size: 2rem;
+    height: 100px;
+    line-height: 100px;
+}
+
+.result-info  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+}
+
+.right-img, .left-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
