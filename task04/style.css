@@ -1,0 +1,44 @@
+.container {
+    height: 100vh;
+    background: #FFEC3D;
+}
+
+.container .option {
+    text-align: center;
+    height: 300px;
+    padding: 20px;
+}
+
+.container .option select {
+    width: 120px;
+}
+
+.container .option-speed {
+    float: left;
+}
+
+.body {
+    position: relative;
+    border: 4px solid #24292E;
+    height: 60%;
+}
+
+#car {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+}
+
+.car-right {
+    transform: rotate(0deg);
+}
+.car-up {
+    transform: rotate(-90deg);
+}
+.car-down {
+    transform: rotate(90deg);
+}
+.car-left {
+    transform: scale(-1,1);
+}
